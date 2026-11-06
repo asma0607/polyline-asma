@@ -1,3 +1,4 @@
+
 import Konva from "konva";
 import { setup, createActor } from "xstate";
 import { createBrowserInspector } from "@statelyai/inspect";
@@ -46,7 +47,7 @@ const rubberBandingMachine = setup({
     // Sauvegarde la ligne
     saveLine: () => {
       rubber.remove(); // On l'enlève de la couche temporaire
-      rubber.stroke("black"); // On change la couleur
+      rubber.stroke("blue"); // On change la couleur
       dessin.add(rubber); // On l'ajoute à la couche de dessin
     },
   },
